@@ -2,10 +2,12 @@
 color2= #E6F4F1;
 color3= #F7F9FF; */
 
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
 body {
  	padding-top: 96px; 
- 	font-family: Georgia,Times,Times New Roman,serif; 
+ 	font-family: 'Rubik', sans-serif;
+ 	font-weight: 10;
 }
 
 
@@ -197,3 +199,41 @@ a:link{
     	height: 800px;
      }
 
+}
+
+/*TESTING*/
+
+.form-control {
+	border: 2px solid #3765B9;
+	border-radius: 0;
+	padding: 0 25px;
+	line-height: 45px;
+	height: 45px;
+}
+
+.btn-primary {
+	background-color: #3765B9;
+}
+
+.btn-primary:hover {
+	background-color: #0A40A2;
+}
+
+h2.section-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 5px;
+	margin-bottom: 80px;
+	color: #3765B9;
+}
+
+p.section-description {
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+h2.section-title + p {
+	margin-top: -70px;
+	margin-bottom: 0;
+}
