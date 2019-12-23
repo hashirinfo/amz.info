@@ -19,6 +19,7 @@ body {
 }
 
 
+
 .navbar-custom {
     background-color: #FFF;
     -webkit-box-shadow: 0 8px 6px -6px #888888;
@@ -38,6 +39,20 @@ body {
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #5883D3;
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #3765B9;
+}
+
+.navbar-custom .dropdown-item {
+    text-decoration: none; color: #fff;
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    text-decoration: none; color: #012882;
+    background-color:#4C8CDB;
 }
 
 .nav-link {
@@ -118,7 +133,9 @@ body {
 }
 
 .footer a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .ico {
@@ -271,4 +288,9 @@ h2.section-title + p {
  .about-sec {
   height: 300px;
   width: 100%;
+ }
+
+ hr {
+  border-top-width: .5px;
+  background-color: white;
  }
