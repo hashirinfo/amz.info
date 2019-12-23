@@ -45,7 +45,7 @@ body {
   padding: 0px 0px;
   margin: 0px 4px;
   display: inline-block;
-  position: relative;
+  position: relative;   
  }
 
 .nav-link:hover {
@@ -247,7 +247,7 @@ h2.section-title + p {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -261,6 +261,14 @@ h2.section-title + p {
     text-shadow: 1px 1px 3px #4974BA;
  }
 
- .ss {
+@media screen and (max-width: 768px) {
+    .contact-title { 
+      letter-spacing: 0;
+     }
+
+}
+
+ .about-sec {
   height: 300px;
+  width: 100%;
  }
