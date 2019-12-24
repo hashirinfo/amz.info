@@ -7,7 +7,6 @@ color3= #F7F9FF; */
 body {
  	padding-top: 96px; 
  	font-family: 'Rubik', sans-serif;
- 	font-weight: 10;
 }
 
 
@@ -18,13 +17,14 @@ body {
 
 }
 
-
+/* NAVBAR STYLES*/
 
 .navbar-custom {
     background-color: #FFF;
     -webkit-box-shadow: 0 8px 6px -6px #888888;
     -moz-box-shadow: 0 8px 6px -6px #888888;
     box-shadow: 1px 8px 8px -6px #888888;
+    text-align: center;
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
@@ -38,7 +38,7 @@ body {
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #5883D3;
+    color: #4C8CDB;
 }
 
 .navbar-custom .dropdown-menu {
@@ -56,46 +56,84 @@ body {
 }
 
 .nav-link {
-  text-transform: uppercase;  
-  padding: 0px 0px;
-  margin: 0px 4px;
-  display: inline-block;
-  position: relative;   
- }
+  transition: 0.2s ease;
+}
 
 .nav-link:hover {
-  opacity: 1;
+  border-top: 2px solid #3765B9;
+  border-bottom: 2px solid #3765B9;
+  padding: 6px 0; 
 }
 
-.nav-link::before {
-  transition: 300ms;
-  height: 3px;
-  content: "";
-  position: absolute;
-  background-color: #577EC5;
+
+.navbar-logo {
+  height: 70px; 
+  width: 150px;
+  transition: 1s;
+
 }
 
-.nav-link-ltr::before {
-  width: 0%;
-  bottom: -5px;
+.navbar-logo:hover {
+  height: 75px;
+  width: 160px;
 }
 
-.nav-link-ltr:hover::before {
-  width: 88%;
-}
+/* NAVBAR STYLES END*/
 
-.custom-row {
+
+/* PRODUCTS HOMEPAGE*/
+
+.custom-row-products {
 	padding-top:50px;
 	padding-bottom: 50px;
 }
 
-.heading {
+.heading-products {
 	padding-top: 50px;
 }
 
-.stl  {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card-styles {
+  border-color: #3765B9;
+  border-width: 3px;
+  color: #3765B9;
+  box-shadow: 1px 3px 9px 1px #888888;
+  transition: 0.3s;
+
+}
+
+.card-styles:hover {
+  box-shadow: 5px 15px 18px 2px #888888;
+}
+
+.cstm {
+  padding-bottom: 50px;
+}
+
+
+.card-image {
+  height: 250px;
+  width: 250px;
+  width: 100%;
+}
+
+/* PRODUCTS HOMEPAGE END*/
+
+/*FORM.HTML*/
+
+.form-control {
+  border: 2px solid #3765B9;
+  border-radius: 0;
+  padding: 0 25px;
+  line-height: 45px;
+  height: 45px;
+}
+
+.btn-primary {
+  background-color: #3765B9;
+}
+
+.btn-primary:hover {
+  background-color: #0A40A2;
 }
 
 .form-group {
@@ -110,18 +148,20 @@ body {
 
 }
 
-.card-styles {
-	border-color: #3765B9;
-	border-width: 3px;
-	color: #3765B9;
-	box-shadow: 1px 3px 9px 1px #888888;
-	transition: 0.3s;
+/* FORM.HTML END*/
+
+/* SLIDER STYLES */
+
+@media screen and (min-width: 768px) {
+    .slides { 
+      height: 800px;
+     }
 
 }
 
-.card-styles:hover {
-	box-shadow: 5px 15px 18px 2px #888888;
-}
+/* SLIDER STYLES END */
+
+/* FOOTER STYLES */
 
 .footer a {
 	color: white;
@@ -138,9 +178,6 @@ body {
   opacity: 0.5;
 }
 
-.ico {
-	
-}
 
 .footer-copyright {
 	background-color: #3765B9;
@@ -151,90 +188,14 @@ a:link{
 	text-decoration: none ;
 }
 
-
-.cstm {
-	padding-bottom: 50px;
-}
-
-
-.card-image {
-	height: 250px;
-	width: 250px;
-	width: 100%;
-}
-
-
-.navbar-logo {
-	height: 70px; 
-	width: 150px;
-	transition: 1s;
-
-}
-
-.navbar-logo:hover {
-	height: 75px;
-	width: 160px;
-}
-
-.lnks {
-  font-weight: bold;
-  text-transform: uppercase;  
-  padding: 0px 0px;
-  margin: 0px 4px;
-  display: inline-block;
-  position: relative;
-  color: black;
+hr {
+  border-top-width: .5px;
+  background-color: white;
  }
 
-.lnks:hover {
-  opacity: 1;
-}
+/* FOOTER STYLES END */
 
-.lnks::before {
-  transition: 300ms;
-  height: 4px;
-  content: "";
-  position: absolute;
-  background-color: #577EC5;
-}
-
-.lnks-ltr::before {
-  width: 0%;
-  bottom: -5px;
-}
-
-.lnks-ltr:hover::before {
-  width: 88%;
-}
-
-.slides {
-
-}
-
-@media screen and (min-width: 768px) {
-    .slides { 
-    	height: 800px;
-     }
-
-}
-
-/*TESTING*/
-
-.form-control {
-	border: 2px solid #3765B9;
-	border-radius: 0;
-	padding: 0 25px;
-	line-height: 45px;
-	height: 45px;
-}
-
-.btn-primary {
-	background-color: #3765B9;
-}
-
-.btn-primary:hover {
-	background-color: #0A40A2;
-}
+/*CONTACT AND ABOUT CONTENT*/
 
 h2.section-title {
 	font-weight: normal;
@@ -255,6 +216,9 @@ h2.section-title + p {
 	margin-bottom: 0;
 }
 
+
+/* PARALLAX IN ABOUT*/
+
 .parallax {
   /* The image used */
   background-image: url("https://images.unsplash.com/photo-1560427450-00fa9481f01e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=639&q=80");
@@ -268,6 +232,8 @@ h2.section-title + p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* ABOUT US*/
 
  .contact-title {  
     font-weight: 900;
@@ -285,12 +251,11 @@ h2.section-title + p {
 
 }
 
- .about-sec {
+ .about-section-row {
   height: 300px;
   width: 100%;
  }
 
- hr {
-  border-top-width: .5px;
-  background-color: white;
- }
+ /* ABOUT US END*/
+
+ 
